@@ -1,0 +1,30 @@
+ol li{
+    background-color: yellow;
+    font-size: 20px;
+}
+
+li > em{
+    font-weight: bold;
+}
+
+ol li:nth-child(odd){
+    text-transform: uppercase;
+}
+
+ol li:nth-child(even){
+    color: green;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: red;
+}
+
+h1 > em{
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+a:hover{
+    font-weight: bold;
+    color: green;
+}
