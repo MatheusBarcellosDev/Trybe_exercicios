@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+header p {
+  text-align: center;
+}
+.container {
+  padding: 20px;
+  font-size: 1.1em;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.emphasis {
+  background-color: #e3e3e375;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.break-apart{
+  border-bottom: 1px solid #ccc;
+}
