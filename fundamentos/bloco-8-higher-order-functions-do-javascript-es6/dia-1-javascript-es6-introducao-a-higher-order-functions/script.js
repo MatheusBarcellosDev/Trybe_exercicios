@@ -5,24 +5,22 @@ deve receber como parâmetro o nome completo da pessoa funcionária e a partir d
 gerar automaticamente um email no formato nome_da_pessoa@trybe.com .
  */
 
-const newEmployees = () => {
+const newEmployees = (callback) => {
     const employees = {
-      id1: newPerson("Pedro Guerra"), // Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro, substituindo as aspas
-      id2: newPerson("Luiza Drumond"), // Nome: Luiza Drumond -> Chame sua função passando o nome Luiza Drumond como parâmetro, substituindo as aspas
-      id3: newPerson("Carla Paiva"), // Nome: Carla Paiva -> Chame sua função passando o nome Carla Paiva como parâmetro, substituindo as aspas
+      id1: callback("Pedro Guerra"), // Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro, substituindo as aspas
+      id2: callback("Luiza Drumond"), // Nome: Luiza Drumond -> Chame sua função passando o nome Luiza Drumond como parâmetro, substituindo as aspas
+      id3: callback("Carla Paiva"), // Nome: Carla Paiva -> Chame sua função passando o nome Carla Paiva como parâmetro, substituindo as aspas
     }
     return employees;
   };
 
 const newPerson = (name) => {
-    return {
-    nomeCompleto: name,
-    email: `${name.replace(/ /g, "_")}@trybe.com`
+    return {nomme: name, email: `${name.replace(/ /g, "_")}@trybe.com`
     }
     
 };
 
-console.log(newEmployees());
+console.log(newEmployees(newPerson));
 
 /* Desenvolva uma HOF que retorna o resultado de um sorteio. 
 Esta HOF irá gerar um número aleatório entre 1 e 5 recebendo como parâmetros 
