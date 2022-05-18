@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "matheusbarcellosdev",
+    "password": "45Rf66rf66rf@",
+    "database": "banco_de_dados_do_sistema_de_livros",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
